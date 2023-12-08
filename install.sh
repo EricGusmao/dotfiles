@@ -4,3 +4,4 @@ stow -t $HOME -R bash
 stow -t $HOME/.config -R waybar
 stow -t $HOME/.config -R hypr 
 stow -t $HOME/.config -R kitty 
+stow -t $HOME/.config -R starship 
