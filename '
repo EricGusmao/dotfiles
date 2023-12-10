@@ -22,7 +22,6 @@ pipewire-pulse
 wireplumber
 gstreamer
 gst-plugin-pipewire
-pavucontrol
 
 # Essential Utilities
 pacman-contrib
@@ -32,4 +31,3 @@ reflector
 dash
 xdg-utils
 xdg-user-dirs
-bat
