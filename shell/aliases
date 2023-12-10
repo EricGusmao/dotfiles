@@ -1,0 +1,6 @@
+# My aliases
+
+# Replace cat with bat to have prettier output
+alias cat='bat'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
