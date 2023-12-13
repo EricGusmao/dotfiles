@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/usr/bin/env bash
 
 iDIR="$HOME/.config/mako/icons"
 
@@ -49,4 +49,3 @@ elif [ "$1" = "--dec" ]; then
 else
     get_backlight
 fi
-

@@ -1,4 +1,4 @@
-#!/bin/dash
+#!/usr/bin/env bash
 
 stow -t $HOME -R shell
 stow -t $HOME/.config -R waybar
