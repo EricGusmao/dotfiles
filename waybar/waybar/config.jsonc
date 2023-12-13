@@ -8,6 +8,7 @@
   ],
   "modules-right": [
     "wireplumber",
+    "bluetooth",
     "network",
     "tray"
   ],
@@ -67,5 +68,13 @@
     "format": " {}",
     "format-en": "en",
     "format-pt": "pt" 
+  },
+  "bluetooth": {
+    "format-off": "󰂲",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱",
+    "format-on": "",
+    "tooltip": true,
+    "on-click": "blueberry"
   }
 }

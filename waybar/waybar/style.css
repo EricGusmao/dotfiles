@@ -30,7 +30,8 @@
 #wireplumber, 
 #network, 
 #tray,
-#language{
+#language,
+#bluetooth{
   padding-left: .6rem;
   padding-right: .6rem;
 }
@@ -97,3 +98,19 @@ tooltip label {
   color: @green;
   
 }
+#bluetooth {
+  font-size: 16px;
+}
+#bluetooth.disabled {
+  color: @red;
+}
+#bluetooth.off{
+  color: @foreground;
+}
+#bluetooth.on{
+  color: @blue;
+}
+#bluetooth.connected{
+  color: @sky;
+}
+
