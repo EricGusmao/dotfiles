@@ -1,4 +1,7 @@
 {
+  "layer": "top",
+  "position": "top",
+  "exclusive": true,
   "modules-left": [
     "hyprland/workspaces"
   ],
@@ -16,20 +19,17 @@
     "disable-scroll": true,
     "format": "{icon}",
     "format-icons": {
-      "1": "",
-      "2": "",
-      "3": "",
-      "4": "",
-      "5": "",
-      "6": "",
-      "7": "",
-      "8": "",
-      "9": "",
-      "10": "",
-      "urgent": "",
-      "focused": "",
-      "default": "",
-      "active": ""
+      "1": " ",
+      "2": "󰈹 ",
+      "3": " ",
+      "4": "󰉋 ",
+      "5": " ", 
+      "urgent": " ",
+      "focused": " ",
+      "default": " "
+    },
+    "persistent-workspaces": {
+      "*": 5
     }
   },
   "wireplumber": {
