@@ -1,7 +1,9 @@
 #
 # ~/.bashrc
 #
-
+export PATH="$PATH:$HOME/DevTools/flutter/bin"
+CHROME_EXECUTABLE=/usr/bin/chromium
+export CHROME_EXECUTABLE
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
