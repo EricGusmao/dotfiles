@@ -1,30 +1,43 @@
 @import "mocha.css";
 
-/* Global */
 * {
-  font-family: "FiraCode Nerd Font";
-  font-weight: bold;
-  font-size: .9rem;
-  border-radius: 1rem;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-  background-color: shade(@base, 0.9);
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 10pt;
+    min-height: 0;
 }
 
-@keyframes blink_red {
-  to {
-    background-color: @red;
-    color: @base;
-  }
+window#waybar {
+    background: #1d1f21;
+    color: white;
 }
 
-.warning, .critical, .urgent {
-  animation-name: blink_red;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+tooltip {
+  background: #1d1f21;
+  border: 1px solid #327bd1;
 }
+
+tooltip label {
+  color: white;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: #1d1f21;
+    color: white;
+}
+
+#workspaces button.focused {
+    background: #333333;
+    border-bottom: 2px solid #327bd1;
+}
+
+#workspaces button.active {
+    background: #333333;
+    border-bottom: 2px solid #327bd1;
+}
+
 
 #clock, 
 #wireplumber, 
@@ -36,56 +49,6 @@
   padding-right: .6rem;
 }
 
-/* Bar */
-window#waybar {
-  background-color: transparent;
-}
-
-window > box {
-  background-color: transparent;
-  margin: .3rem;
-  margin-bottom: 0;
-}
-
-
-/* Workspaces */
-#workspaces:hover {
-  background-color: @green;
-}
-
-#workspaces button {
-  padding-right: .4rem;
-  padding-left: .4rem;
-  padding-top: .1rem;
-  padding-bottom: .1rem;
-  color: @lavender;
-  /* border: .2px solid transparent; */
-  background: transparent;
-}
-
-#workspaces button.focused {
-  color: @blue;
-}
-
-#workspaces button:hover {
-  /* border: .2px solid transparent; */
-  color: @rosewater;
-}
-
-#workspaces button.active {
-  color: @green
-}
-
-/* Tooltip */
-tooltip {
-  background-color: @base;
-}
-
-tooltip label {
-  color: @rosewater;
-}
-
-/* Extra */
 #clock {
   color: @peach;
 }
@@ -101,20 +64,5 @@ tooltip label {
 #language {
   color: @green;
   
-}
-#bluetooth {
-  font-size: 16px;
-}
-#bluetooth.disabled {
-  color: @red;
-}
-#bluetooth.off{
-  color: @foreground;
-}
-#bluetooth.on{
-  color: @blue;
-}
-#bluetooth.connected{
-  color: @sky;
 }
 

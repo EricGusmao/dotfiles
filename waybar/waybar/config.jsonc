@@ -1,36 +1,24 @@
 {
   "layer": "top",
   "position": "top",
+  "height": 30,
+  "spacing": 4,
   "exclusive": true,
   "modules-left": [
     "hyprland/workspaces"
   ],
   "modules-center": [
-    "clock",
-    "hyprland/language"
+    "hyprland/window"
   ],
   "modules-right": [
     "wireplumber",
-    "bluetooth",
     "network",
+    "hyprland/language",
+    "clock",
     "tray"
   ],
   "hyprland/workspaces": {
-    "disable-scroll": true,
-    "format": "{icon}",
-    "format-icons": {
-      "1": "  ",
-      "2": "󰈹 ",
-      "3": " ",
-      "4": "󰉋 ",
-      "5": " ", 
-      "urgent": " ",
-      "focused": " ",
-      "default": " "
-    },
-    "persistent-workspaces": {
-      "*": 5
-    }
+    "format": "{name}"
   },
   "wireplumber": {
     "scroll-step": 1,
@@ -48,10 +36,9 @@
     "on-click": "pavucontrol",
     "tooltip": false
   },
-  "clock": {
-    "interval": 1,
-    "format": "{:%H:%M %A %b %d}",
-    "tooltip": false
+    "clock": {
+     "format": "{:%a %b%e %R}",
+     "interval": 1 
   },
   "network": {
     "interval": 1,
@@ -61,20 +48,15 @@
     "tooltip": false
   },
   "tray": {
-    "icon-size": 15,
-    "spacing": 5
+    "spacing": 10
   },
   "hyprland/language": {
-    "format": " {}",
-    "format-en": "en",
-    "format-pt": "pt" 
+    "format": " {}", 
+    "format-en": "EN",
+    "format-pt": "PT" 
   },
-  "bluetooth": {
-    "format-off": "󰂲",
-    "format-disabled": "󰂲",
-    "format-connected": "󰂱",
-    "format-on": "",
-    "tooltip": true,
-    "on-click": "blueberry"
+  "hyprland/window": {
+    "max-length": 200,
+    "separate-outputs": true
   }
 }

@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-stow -t $HOME -R shell
-stow -t $HOME/.config -R waybar
-stow -t $HOME/.config -R hypr 
-stow -t $HOME/.config -R kitty 
-stow -t $HOME/.config -R starship 
-stow -t $HOME/.config -R mako 
